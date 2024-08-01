@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Cnaira Exchange-Seamless Gift Card and Cryptocurrency Trading</title>
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./index2.js"></script>
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./Xlogo.png.jpg"type="image/x-icon">
+    <script>
+    
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').style.display = 'none';
+            }, 2000);
+        });
+    </script>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(128, 128, 128, 0.5));
+}
+
+
+:root {
+    --primary-color: #6c85a5;
+    --secondary-color: #ffd700;
+    --tertiary-color: #f0f0f0;
+    --prime-color: #004e89;
+}
+
+html, body {
+    height: 100%;
+    color: var(--tertiary-color);
+    font-size: 1.03em;
+}
+.table{
+    color: black;
+}
+
+.navbar-wrapper img {
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 9px;
+}
+
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-menu-area {
+    display: flex;
+    align-items: center;
+    flex-grow: 0.6;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.nav-menu li a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-menu li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.nav-menu li a:hover {
+    color: var(--tertiary-color);
+}
+
+.nav-menu li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-menu li {
+    margin-right: 0;
+    color: var(--tertiary-color);
+}
+
+.banner-section {
+    background-image:linear-gradient(rgba(0, 32, 64, 0.85), rgba(0, 32, 64, 0.85)),url("aboutus.jpg");
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.burger{
+    display: none;
+}
+.hamIMG .burger {
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+    display: none;
+    cursor: pointer;
+}
+
+
+.banner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-content h1, .banner-content h2 {
+    margin: 0;
+}
+
+@media (max-width: 1001px) {
+    .navbar-wrapper {
+        margin-top: 5%;
+        width: 95%;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamIMG .burger {
+        display: block;
+        /* Ensures the hamburger menu is not circular */
+        border-radius: 0; 
+    }
+
+    .navbar-wrapper img {
+        margin-left: 12px;
+        height: 30px;
+    }
+
+    .nav-menu-area {
+        max-width: 7%;
+    }
+
+    .banner-content {
+        height: 80%;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:860px){
+    .banner-content h1, .banner-content h2{
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width:500px){
+    .banner-content h1, .banner-content h2{
+        font-size: 1.2em;
+    }
+}
+
+.bodyTXT h2{
+    color: var(--prime-color);
+}
+.bodyTXT{
+    padding: 60px 30px;
+    color: black;
+    font-size: 1.2em;
+}
+.footerLogo img{
+    border-radius: 50%;
+    height: 30px;
+}
+
+
+.burg {
+    height: 24px;
+    width: 24px;
+    filter: invert(100%);
+}
+
+
+.fixed-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    padding: 15px;
+    font-size: 24px;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.fixed-whatsapp:hover {
+    transform: scale(1.1);
+}
+.banner-content h2 {
+   color: var(--secondary-color);
+}
+
+     </style>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <h1>Loading...</h1>
+        </div>
+    </div>
+    
+    <div class="slide-menu" id="slideMenu">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Service</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./contact.html" id="write">Write Us</a></li>
+        </ul>
+      </div>
+    <section class="banner-section">
+        <div class="navbar_bottom">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <img src="./Xlogo.png.jpg" alt="">
+                    <div class="nav-menu-area">
+                        <ul class="nav-menu">
+                            <li> <a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./service.html">Service</a> </li>
+                            <li><a href="./contact.html">Contact</a> </li>
+                            <li><a href="./contact.html" id="write">Write Us</a></li>
+                        </ul>
+                        <div class="hamIMG">
+                           <img src="./Hamburger Menu.svg" alt="" class="burger">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-wrapper">
+            <div class="banner-content">
+                <h1>Service</h1>
+                <h2>Home - Service</h2>
+            </div>
+        </div>
+    </section>
+    <section class="table">
+        <h1>Currency Pairs We Trade</h1>
+<p>At Cnaira Exchange, we understand the importance of flexibility and variety in trading options. Here are some of the currency pairs that you can buy and sell on our platform:</p>
+
+<div class="Currency">
+    <div class="indicator"></div>
+    <ul>
+        <li id="BTCUSD">Bitcoin (BTC) to USD
+            <div class="description">Bitcoin (BTC) is the first decentralized digital currency, allowing peer-to-peer transactions without the need for intermediaries. It is exchanged for USD, providing a means for users to convert digital currency into traditional fiat money.</div>
+        </li><hr>
+
+        <li id="ETHUSD">Ethereum (ETH) to USD
+            <div class="description">Ethereum (ETH) is a blockchain platform known for its smart contract functionality. ETH, the platform's cryptocurrency, can be traded for USD. Ethereum enables developers to build decentralized applications (dApps) on its network.</div>
+        </li>
+        <hr>
+        <li id="BTCEUR">Bitcoin (BTC) to EUR
+            <div class="description">Bitcoin (BTC) to Euro (EUR) exchange rate allows users to convert Bitcoin into Euros. This pair is popular in Europe and among users who prefer trading in the Eurozone currency.</div>
+        </li>
+        <hr>
+        <li id="ETHEUR">Ethereum (ETH) to EUR
+            <div class="description">Ethereum (ETH) to Euro (EUR) exchange rate enables the trading of Ethereum for Euros. This is widely used by European traders and those dealing with the Euro currency.</div>
+        </li>
+        <hr>
+        <li id="LTCUSD">Litecoin (LTC) to USD
+            <div class="description">Litecoin (LTC) is a peer-to-peer cryptocurrency created as a lighter alternative to Bitcoin. It is often referred to as the silver to Bitcoin's gold. LTC can be traded for USD, offering a quick and low-cost means of transaction.</div>
+        </li>
+        <hr>
+        <li id="XRPUSD">Ripple (XRP) to USD
+            <div class="description">Ripple (XRP) is both a platform and a currency. The platform is an open-source protocol that is designed to allow fast and cheap transactions. XRP, its native cryptocurrency, can be exchanged for USD. Ripple aims to enable instant and secure global financial transactions.</div>
+        </li>
+        <li id="BCHUSD">Bitcoin Cash (BCH) to USD
+            <div class="description">Bitcoin Cash (BCH) is a fork of Bitcoin created to address scalability issues. It allows for faster transaction times and lower fees. BCH can be traded for USD, providing an efficient alternative to Bitcoin for transactions.</div>
+        </li>
+        <li id="ETHBTC">Ethereum (ETH) to BTC
+            <div class="description">Ethereum (ETH) to Bitcoin (BTC) exchange rate allows users to trade Ethereum for Bitcoin. This pair is often used by traders looking to diversify their cryptocurrency portfolios.</div>
+        </li>
+        <li id="LTCBTC">Litecoin (LTC) to BTC
+            <div class="description">Litecoin (LTC) to Bitcoin (BTC) exchange rate enables the conversion of Litecoin into Bitcoin. This is useful for traders who wish to exchange their Litecoin holdings for Bitcoin.</div>
+        </li>
+        <li id="BCHBTC">Bitcoin Cash (BCH) to BTC
+            <div class="description">Bitcoin Cash (BCH) to Bitcoin (BTC) exchange rate allows users to trade Bitcoin Cash for Bitcoin. This pair is popular among users who hold both cryptocurrencies and want to switch between them.</div>
+        </li>
+    </ul>
+</div>
+
+
+<div class="store store1"></div>
+<div class="store store2"></div>
+<div class="store store3"></div>
+<div class="store store4"></div>
+<div class="store store5"></div>
+</section>
+<section class="bodyTXT">
+    <h2>Our Services</h2>
+    <p>
+At Cnaira Exchange, we provide a comprehensive suite of services designed to meet all your digital trading needs. Whether you are looking to buy or sell gift cards, trade cryptocurrencies, or explore new investment opportunities, our platform offers the tools and support you need to succeed.
+</p>
+
+<h4>Gift Card Trading</h4>
+<p>
+We offer a seamless and secure platform for trading a wide range of gift cards. Our service supports popular brands such as Amazon, iTunes, Google Play, and many others. You can easily convert your gift cards into cash or trade them for other digital assets. Our competitive rates ensure you get the best value for your trades, and our fast processing times mean you receive your funds quickly.
+</p>
+
+<h4>Cryptocurrency Trading</h4>
+<p>
+Cnaira Exchange provides a reliable and user-friendly platform for trading cryptocurrencies. We support a variety of digital currencies, including Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Ripple (XRP), and more. Our platform features real-time market data, competitive rates, and secure transactions, allowing you to trade with confidence. Whether you are a beginner or an experienced trader, our intuitive interface and comprehensive tools make it easy to manage your crypto portfolio.
+</p>
+
+<h4>24/7 Customer Support</h4>
+<p>
+Our dedicated customer support team is available 24/7 to assist you with any questions or issues you may have. Whether you need help with a transaction, have a question about our services, or need technical support, our team is here to provide prompt and efficient assistance. You can reach us through our live chat feature, email, or contact form.
+</p>
+
+<h4>Educational Resources</h4>
+<p>
+At Cnaira Exchange, we believe in empowering our users with knowledge. Our platform features a comprehensive library of educational resources, including tutorials, articles, and webinars. These resources are designed to help you make informed trading decisions and stay updated with the latest market trends. Whether you are new to digital trading or looking to enhance your skills, our educational materials provide valuable insights and guidance.
+</p>
+
+<h4>Why Choose Cnaira Exchange?</h4>
+<p>
+<h4>Reliability:</h4> With five years of experience in the digital trading industry, we have built a reputation for reliability and efficiency. Our platform is designed to provide a seamless trading experience, ensuring your transactions are processed quickly and securely.
+Innovation: We continuously innovate and improve our services to meet the evolving needs of our users. Our platform is equipped with the latest features and tools to help you succeed in the digital trading world.  <br><br>
+<h4>Customer Satisfaction:</h4> Your satisfaction is our top priority. We are committed to providing the highest quality service and support, ensuring you have a positive experience with Cnaira Exchange.
+</p>
+<p>
+Thank you for choosing Cnaira Exchange. We look forward to serving you and helping you achieve your trading goals. Explore our services and experience the difference with Cnaira Exchange today.
+</p>
+</section>
+<div>
+    <!-- HTML code to include the WhatsApp icon with the substituted link -->
+<a href="https://bit.ly/3eWmqQz" class="fixed-whatsapp" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
+<div class="footerCont">
+    <section class="footL">
+        <div class="footerLogo">
+            <img src="./Xlogo.png.jpg" alt="">
+        </div>
+        <div class="About">
+            <h4>About</h4>
+        </div>
+        <div class="All">
+        <div class="about">
+            <h4>Contact</h4>
+            <span>anthonyclement98@gmail.com</span><br><br><br>
+            <span>+234 810 655 7377</span>
+        </div>
+        </div>
+     
+        <div class="community">
+            
+            <h3>community</h3>
+            <br>
+            <div class="social-icons">
+                <a href="https://bit.ly/3eWmqQz" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/cnaira_xchange?igsh=bm12eDQ3cndzd3Z6&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+   <div class="COPY">COPYRIGHT © 2019. All Rights Reserved By Cnaira Exchange.
+
+   </div>
+   </div>
+</body>
+</html> 

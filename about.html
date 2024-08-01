@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cnaira Exchange-Seamless Gift Card and Cryptocurrency Trading</title>
+    <script defer src="./index2.js"></script>
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./Xlogo.png.jpg"type="image/x-icon">
+    <script>
+    
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').style.display = 'none';
+            }, 2000);
+        });
+    </script>
+    <style>
+     body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(128, 128, 128, 0.5));
+}
+
+:root {
+    --primary-color: #6c85a5;
+    --secondary-color: #ffd700;
+    --tertiary-color: #f0f0f0;
+    --prime-color: #004e89;
+}
+
+html, body {
+    height: 100%;
+    color: var(--tertiary-color);
+    font-size: 1.03em;
+}
+
+.navbar-wrapper img {
+    height: 50px;
+    border-radius: 50%; /* Ensures logo image is circular */
+    margin-left: 9px;
+}
+
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-menu-area {
+    display: flex;
+    align-items: center;
+    flex-grow: 0.6;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.nav-menu li a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-menu li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.nav-menu li a:hover {
+    color: var(--tertiary-color);
+}
+
+.nav-menu li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-menu li {
+    margin-right: 0;
+    color: var(--tertiary-color);
+}
+
+.banner-section {
+    background-image:linear-gradient(rgba(0, 32, 64, 0.85), rgba(0, 32, 64, 0.85)),url("aboutus.jpg");
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.banner-content h1 {
+    text-align: center;
+    position: absolute;
+    bottom: 55%;
+    left: 48%;
+    font-size: 2em;
+}
+
+.banner-content h2 {
+    position: absolute;
+    top: 53%;
+    left: 47%;
+}
+
+.hamIMG .burger {
+    height: 30px;
+    width: 30px;
+    background-color: var(--tertiary-color);
+    display: none;
+}
+
+@media (max-width: 1001px) {
+    .navbar-wrapper {
+        margin-top: 5%;
+        width: 95%;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamIMG .burger {
+        display: block;
+        /* Ensures the hamburger menu is not circular */
+        border-radius: 0; 
+        cursor: pointer;
+    }
+
+    .navbar-wrapper img {
+        margin-left: 12px;
+        height: 30px;
+    }
+
+    .nav-menu-area {
+        max-width: 7%;
+    }
+
+    .banner-content {
+        height: 80%;
+        justify-content: space-around;
+    }
+}
+@media(max-width:860px){
+    .banner-content h1, .banner-content h2{
+        left:37%;
+    }
+}
+.FeatureCont{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.FeatureIMG img {
+    height: 1000px;
+    border-radius: 12px;
+}
+.FeatureTEXT h2{
+ color: var(--prime-color);
+}
+.FeatureTEXT{
+    font-size: 1.16em;
+}
+.Feature{
+    margin: 90px 30px;
+    color: black;
+}
+.Featurebtns{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+.Bit, .BitC {
+    
+    padding: 20px;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    color: var(--tertiary-color);
+}
+.Bit a, .BitC a {
+    color: var(--tertiary-color);
+}
+.Bit{
+    border: 2px solid var(--prime-color);
+    background-color: var(--prime-color);
+    transition: all 0.5s;
+}
+.Bit:hover{
+background-color: transparent;
+}
+.BitC{
+    border: 2px solid var(--prime-color);
+    background-color: transparent;
+    color: var(--prime-color);
+}
+.BitC:hover{
+    background-color: var(--prime-color);
+    color: var(--tertiary-color);
+}
+@media(max-width:1250px){
+    .addition{
+        display: none;
+    }
+}
+@media(max-width:1001px){
+    .addition, .FeatureCont{
+        display: block;
+    }
+    .FeatureIMG img {
+        width:100%;
+        height: 1240px;
+    }
+    .FeatureTEXT{
+        font-size: 1.7em;
+    }
+    
+}
+@media(max-width:714px){
+    .FeatureTEXT {
+        font-size: 1.6em;
+    }
+    .Featurebtns{
+        display: block;
+        padding-right: 40px;
+    }
+   
+}
+@media(max-width:613px){
+    .FeatureIMG img{
+        height: 800px;
+    }
+    .FeatureTEXT{
+        font-size: 1.3em;
+        font-weight:15px;
+    }
+}
+@media(max-width:501px){
+    .FeatureIMG{
+        /* height: 700px; */
+    }
+}
+.bodyTXT h2{
+    color: var(--prime-color);
+    text-align: center;
+}
+.bodyTXT{
+    padding: 70px 20px;
+    color: black; 
+}
+.banner-content h2 {
+   color: var(--secondary-color);
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <h1>Loading...</h1>
+        </div>
+    </div>
+    
+    <div class="slide-menu" id="slideMenu">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Service</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./contact.html" id="write">Write Us</a></li>
+        </ul>
+      </div>
+    <section class="banner-section">
+        <div class="navbar_bottom">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <img src="./Xlogo.png.jpg" alt="">
+                    <div class="nav-menu-area">
+                        <ul class="nav-menu">
+                            <li> <a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./service.html">Service</a> </li>
+                            <li><a href="./contact.html">Contact</a> </li>
+                            <li><a href="./contact.html" id="write">Write Us</a></li>
+                        </ul>
+                        <div class="hamIMG">
+                           <img src="./Hamburger Menu.svg" alt="" class="burger">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-wrapper">
+            <div class="banner-content">
+                <h1>About Us</h1>
+                <h2>Home-About</h2>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Feature">
+        <div class="FeatureCont">
+        <div class="FeatureIMG">
+            <img src="./Section.jpg" alt="">
+        </div>
+        <div class="FeatureTEXT">
+            <h2>Welcome to Cnaira Exchange</h2>
+<span id="Welcome">
+At Cnaira Exchange, we pride ourselves on being a leading platform for the buying and selling of gift cards and Bitcoin. Our mission is to provide a seamless and secure trading experience that empowers our users to make the most of their digital assets. With our user-friendly interface, competitive rates, and dedicated customer support, Cnaira Exchange is your go-to destination for all your trading needs.
+</span>
+<br><br>
+<h2>What We Do</h2>
+<span id="Welcome">
+Cnaira Exchange is known for its reliability and efficiency in the digital trading market. We specialize in facilitating the exchange of various gift cards and cryptocurrencies, ensuring our users receive the best value for their trades. Whether you're looking to buy or sell, our platform is designed to cater to both novice and experienced traders, making the process straightforward and hassle-free.
+<p>Our comprehensive gift card exchange offers a wide range of gift cards from popular brands such as Amazon, iTunes, Google Play, and more. Our platform allows you to quickly and easily convert your gift cards into cash or other digital assets, providing a seamless and efficient trading experience.</p>
+<p class="addition">In addition to gift cards, we support a variety of cryptocurrencies, including Bitcoin, Ethereum, Litecoin, and Ripple. We provide real-time market data and competitive rates, ensuring that you can trade your digital currencies with confidence and ease. Our platform is optimized for speed, allowing you to complete your transactions instantly, without any unnecessary delays.</p>
+<p>We believe in empowering our users with knowledge. Our platform features a comprehensive library of educational resources, including tutorials, articles, and webinars, to help you make informed trading decisions and stay updated with market trends. Whether you're a beginner or an experienced trader, you'll find valuable information to enhance your trading experience.</p>
+</span>
+<br>
+<div class="Featurebtns">
+    <div class="Bit"><a href="https://bit.ly/3eWmqQz" target="_blank">Buy Bitcoin</a></div>
+    <br>
+    <div class="BitC"><a href="https://bit.ly/3eWmqQz" target="_blank">Sell Bitcoin</a></div>
+</div>
+
+        </div>
+        </div>
+    </section>
+    <section class="bodyTXT">
+        <h2>Our Journey and Commitment to Excellence</h2>
+        <p>
+            Cnaira Exchange has been in existence for five years. Over this period, we have built a reputation for reliability, efficiency, and customer satisfaction. Our five-year journey has been marked by continuous growth and innovation, ensuring we remain at the forefront of the digital trading industry. We are proud of the trust our users have placed in us and are committed to maintaining the highest standards of service.
+            </p>
+            <p>
+            Throughout these five years, Cnaira Exchange has consistently adapted to the changing dynamics of the market. We've embraced new technologies, refined our processes, and expanded our services to meet the diverse needs of our users. Our platform is designed to offer a seamless experience, whether you are trading gift cards or cryptocurrencies. We continually update our systems to provide the fastest, most secure transactions possible.
+            </p>
+            <P>
+            Our commitment to customer satisfaction is unwavering. We understand that our users rely on us for efficient and secure trading, and we take this responsibility seriously. Our dedicated customer support team is available 24/7 to address any queries or concerns, ensuring that you always have the assistance you need. We value the feedback from our users, using it to enhance our services and improve our platform continuously.
+            </P>
+            <P>
+            Innovation is at the heart of Cnaira Exchange. Over the past five years, we have introduced numerous features and improvements, all aimed at making your trading experience better. From real-time market data and intuitive interface design to comprehensive educational resources, we strive to provide everything you need to succeed in the digital trading world.
+            </P>
+            <p>
+            We are grateful for the trust and loyalty of our users, which have been instrumental in our growth and success. As we look to the future, we remain committed to delivering the highest quality service and maintaining the reliability and efficiency that our users have come to expect. Our goal is to continue being a leader in the digital trading industry, setting new standards for excellence and innovation.
+            </p>
+            <p>
+            Thank you for choosing Cnaira Exchange. We look forward to serving you and helping you achieve your trading goals. If you have any questions or need assistance, our dedicated customer support team is available 24/7 to assist you.
+                </p>
+    </section>
+    <div>
+        <!-- HTML code to include the WhatsApp icon with the substituted link -->
+<a href="https://bit.ly/3eWmqQz" class="fixed-whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    </div>
+    <div class="footerCont">
+        <section class="footL">
+            <div class="footerLogo">
+                <img src="./Xlogo.png.jpg" alt="">
+            </div>
+            <div class="About">
+                <h4>About</h4>
+            </div>
+            <div class="All">
+            <div class="about">
+                <h4>Contact</h4>
+                <span>anthonyclement98@gmail.com</span><br><br><br>
+                <span>+234 810 655 7377</span>
+            </div>
+            </div>
+         
+            <div class="community">
+                
+                <h3>community</h3>
+                <br>
+                <div class="social-icons">
+                    <a href="https://bit.ly/3eWmqQz" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/cnaira_xchange?igsh=bm12eDQ3cndzd3Z6&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+       <div class="COPY">COPYRIGHT © 2019. All Rights Reserved By Cnaria Exchange.
+
+       </div>
+       </div>
+
+    
+</body>
+</html>

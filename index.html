@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cnaira Exchange-Seamless Gift Card and Cryptocurrency Trading</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script defer src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <link rel="icon" href="./Xlogo.png.jpg" type="image/x-icon" />
+  </head>
+  <script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+      }, 2000);
+    });
+  </script>
+  <body>
+    <div id="loader">
+        <div class="loader-content">
+          <h1>Loading...</h1>
+        </div>
+      </div>
+  
+      <div class="slide-menu" id="slideMenu">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Service</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./contact.html" id="write">Write Us</a></li>
+        </ul>
+      </div>
+  
+      <section class="banner-section">
+        <div class="navbar_bottom">
+          <div class="container">
+            <div class="navbar-wrapper">
+              <img src="./Xlogo.png.jpg" alt="" />
+              <div class="nav-menu-area">
+                <ul class="nav-menu">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./service.html">Service</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="./contact.html" id="write">Write Us</a></li>
+                </ul>
+                <div class="ham">
+                  <img src="./Hamburger Menu.svg" alt="" class="burg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-wrapper">
+          <div class="banner-content">
+            <h1 class="banner-tittle">Cnaira Exchange</h1>
+            <p class="bannerP">
+              Welcome to Cnaira Exchange, your trusted partner for buying and
+              selling gift cards.
+            </p>
+            <br />
+            <div class="btns">
+              <div class="buy">
+                <a href="https://bit.ly/3eWmqQz" target="_blank">Buy Gift Cards</a>
+              </div>
+              <br /><br />
+              <div class="buy">
+                <a href="https://bit.ly/3eWmqQz" target="_blank">Sell Gift Cards</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Feature">
+        <div class="FeatureCont">
+          <div class="FeatureIMG">
+            <img src="./Section.jpg" alt="" />
+          </div>
+          <div class="FeatureTEXT">
+            <h2>Welcome to Cnaira Exchange</h2>
+            <span id="Welcome">
+              At Cnaira Exchange, we pride ourselves on being a leading platform
+              for the buying and selling of gift cards and Bitcoin. Our mission is
+              to provide a seamless and secure trading experience that empowers
+              our users to make the most of their digital assets. With our
+              user-friendly interface, competitive rates, and dedicated customer
+              support, Cnaira Exchange is your go-to destination for all your
+              trading needs.
+            </span>
+            <br /><br />
+            <h2>What We Do</h2>
+            <span id="Welcome">
+              Cnaira Exchange is known for its reliability and efficiency in the
+              digital trading market. We specialize in facilitating the exchange
+              of various gift cards and cryptocurrencies, ensuring our users
+              receive the best value for their trades. Whether you're looking to
+              buy or sell, our platform is designed to cater to both novice and
+              experienced traders, making the process straightforward and
+              hassle-free.
+              <p>
+                Our comprehensive gift card exchange offers a wide range of gift
+                cards from popular brands such as Amazon, iTunes, Google Play, and
+                more. Our platform allows you to quickly and easily convert your
+                gift cards into cash or other digital assets, providing a seamless
+                and efficient trading experience.
+              </p>
+              <p class="addition">
+                In addition to gift cards, we support a variety of
+                cryptocurrencies, including Bitcoin, Ethereum, Litecoin, and
+                Ripple. We provide real-time market data and competitive rates,
+                ensuring that you can trade your digital currencies with
+                confidence and ease. Our platform is optimized for speed, allowing
+                you to complete your transactions instantly, without any
+                unnecessary delays.
+              </p>
+              <p>
+                We believe in empowering our users with knowledge. Our platform
+                features a comprehensive library of educational resources,
+                including tutorials, articles, and webinars, to help you make
+                informed trading decisions and stay updated with market trends.
+                Whether you're a beginner or an experienced trader, you'll find
+                valuable information to enhance your trading experience.
+              </p>
+            </span>
+            <br />
+            <div class="Featurebtns">
+              <div class="Bit">
+                <a href="https://bit.ly/3eWmqQz" target="_blank">Buy Bitcoin</a>
+              </div>
+              <br />
+              <div class="BitC">
+                <a href="https://bit.ly/3eWmqQz" target="_blank">Sell Bitcoin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="table">
+        <h1>Currency Pairs We Trade</h1>
+        <p>
+          At Cnaira Exchange, we understand the importance of flexibility and
+          variety in trading options. Here are some of the currency pairs that you
+          can buy and sell on our platform:
+        </p>
+  
+        <div class="Currency">
+          <div class="indicator"></div>
+          <ul>
+            <li id="BTCUSD">
+              Bitcoin (BTC) to USD
+              <div class="description">
+                Bitcoin (BTC) is the first decentralized digital currency,
+                allowing peer-to-peer transactions without the need for
+                intermediaries. It is exchanged for USD, providing a means for
+                users to convert digital currency into traditional fiat money.
+              </div>
+            </li>
+            <hr />
+  
+            <li id="ETHUSD">
+              Ethereum (ETH) to USD
+              <div class="description">
+                Ethereum (ETH) is a blockchain platform known for its smart
+                contract functionality. ETH, the platform's cryptocurrency, can be
+                traded for USD. Ethereum enables developers to build decentralized
+                applications (dApps) on its network.
+              </div>
+            </li>
+            <hr />
+            <li id="BTCEUR">
+              Bitcoin (BTC) to EUR
+              <div class="description">
+                Bitcoin (BTC) to Euro (EUR) exchange rate allows users to convert
+                Bitcoin into Euros. This pair is popular in Europe and among users
+                who prefer trading in the Eurozone currency.
+              </div>
+            </li>
+            <hr />
+            <li id="ETHEUR">
+              Ethereum (ETH) to EUR
+              <div class="description">
+                Ethereum (ETH) to Euro (EUR) exchange rate enables the trading of
+                Ethereum for Euros. This is widely used by European traders and
+                those dealing with the Euro currency.
+              </div>
+            </li>
+            <hr />
+            <li id="LTCUSD">
+              Litecoin (LTC) to USD
+              <div class="description">
+                Litecoin (LTC) is a peer-to-peer cryptocurrency created as a
+                lighter alternative to Bitcoin. It is often referred to as the
+                silver to Bitcoin's gold. LTC can be traded for USD, offering a
+                quick and low-cost means of transaction.
+              </div>
+            </li>
+            <hr />
+            <li id="XRPUSD">
+              Ripple (XRP) to USD
+              <div class="description">
+                Ripple (XRP) is both a platform and a currency. The platform is an
+                open-source protocol that is designed to allow fast and cheap
+                transactions. XRP, its native cryptocurrency, can be exchanged for
+                USD. Ripple aims to enable instant and secure global financial
+                transactions.
+              </div>
+            </li>
+            <li id="BCHUSD">
+              Bitcoin Cash (BCH) to USD
+              <div class="description">
+                Bitcoin Cash (BCH) is a fork of Bitcoin created to address
+                scalability issues. It allows for faster transaction times and
+                lower fees. BCH can be traded for USD, providing an efficient
+                alternative to Bitcoin for transactions.
+              </div>
+            </li>
+            <li id="ETHBTC">
+              Ethereum (ETH) to BTC
+              <div class="description">
+                Ethereum (ETH) to Bitcoin (BTC) exchange rate allows users to
+                trade Ethereum for Bitcoin. This pair is often used by traders
+                looking to diversify their cryptocurrency portfolios.
+              </div>
+            </li>
+            <li id="LTCBTC">
+              Litecoin (LTC) to BTC
+              <div class="description">
+                Litecoin (LTC) to Bitcoin (BTC) exchange rate enables the
+                conversion of Litecoin into Bitcoin. This is useful for traders
+                who wish to exchange their Litecoin holdings for Bitcoin.
+              </div>
+            </li>
+            <li id="BCHBTC">
+              Bitcoin Cash (BCH) to BTC
+              <div class="description">
+                Bitcoin Cash (BCH) to Bitcoin (BTC) exchange rate allows users to
+                trade Bitcoin Cash for Bitcoin. This pair is popular among users
+                who hold both cryptocurrencies and want to switch between them.
+              </div>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="store store1"></div>
+        <div class="store store2"></div>
+        <div class="store store3"></div>
+        <div class="store store4"></div>
+        <div class="store store5"></div>
+      </section>
+      <section class="Benefits">
+        <div class="BenefitsIMG">
+          <img src="./etherum.jpg" alt="" />
+        </div>
+        <div class="BenefitTEXT">
+          <h2>The Benefits of Trading with Cnaira Exchange</h2>
+          <p>
+            We offer some of the most competitive rates in the industry. Our goal
+            is to provide you with the best value for your digital assets,
+            ensuring you get the most out of your trades. With real-time market
+            analysis and updates, we ensure that our rates are always fair and
+            favorable. Fast and Efficient Processing
+          </p>
+          <p>
+            Time is of the essence in digital trading, and we understand that. Our
+            platform is optimized for speed, allowing you to complete your
+            transactions quickly and efficiently. Whether you're buying or
+            selling, you can count on Cnaira Exchange to process your trades
+            promptly. 24/7 Customer Support
+          </p>
+          <p>
+            Our dedicated support team is available around the clock to assist you
+            with any queries or issues. We believe in providing exceptional
+            customer service.
+          </p>
+          <div class="benefitBtns">
+            <div class="getBtn">
+              <a href="https://bit.ly/3eWmqQz" target="_blank">Get Started</a>
+            </div>
+            <br />
+            <div class="MoreBtn"><a href="./about.html">More About Us</a></div>
+          </div>
+        </div>
+      </section>
+      <section class="holder">
+        <div class="OurUser">
+          <h2 class="user">What Our User Say</h2>
+        </div>
+        <div class="reviews">
+          <div class="review">
+            <h3>Ogbiti Emmanuel</h3>
+            <p>
+              Cnaira Exchange has revolutionized my trading experience. The
+              real-time market data and competitive rates have allowed me to make
+              informed trading decisions. I appreciate the security measures in
+              place, ensuring my transactions are safe. The support team is
+              fantastic, providing prompt assistance whenever needed. I couldn't
+              ask for a better platform.
+            </p>
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+          </div>
+          <div class="review">
+            <h3>Olasubomi Ajaji</h3>
+            <p>
+              As a beginner in digital trading, I was initially apprehensive about
+              using Cnaira Exchange. However, the educational resources provided
+              by the platform were incredibly helpful in getting me started. The
+              interface is intuitive, and I felt secure trading my
+              cryptocurrencies. I've now been using it for six months and have had
+              a smooth experience throughout.
+            </p>
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+          </div>
+          <div class="review">
+            <h3>Adeyemo kayode</h3>
+            <p>
+              What sets Cnaira Exchange apart is its efficiency and reliability.
+              The instant transaction processing is a game-changer, and I've never
+              faced any delays. The platform's design is sleek and easy to
+              navigate, making my trading experience seamless. I highly recommend
+              Cnaira Exchange to anyone looking to trade digital assets.
+            </p>
+            <br />
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+            <img src="./star.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <div class="workH"><h2>working Hours</h2></div>
+      <section class="working">
+        <div class="workingIMG">
+          <img src="./work.jpg" alt="" /><br /><br /><br />
+          <div class="servicebtn">
+            <div class="workbtns">
+              <a href="https://bit.ly/3eWmqQz" target="_blank">Get Started Now</a>
+            </div>
+            <div class="workbtns"><a href="./about.html">More About Us</a></div>
+          </div>
+        </div>
+        <div class="workingTEXT">
+          <p>
+            At Cnaira Exchange, we understand that the world of digital trading
+            never sleeps. That's why we are committed to providing our users with
+            round-the-clock support and services.We operates 24 hours a day, 7
+            days a week, ensuring that you can trade whenever it suits you best,
+            no matter where you are in the world.
+          </p>
+          <p>
+            Our dedicated support team is also available 24/7 to assist with any
+            queries or issues you may encounter. Whether it's a question about a
+            transaction, assistance with using our platform, or general inquiries
+            about our services, we're here to help at any time.
+          </p>
+          <br /><br /><br /><br />
+          <div class="servicebtns">
+            <div class="workbtns">
+              <a href="https://bit.ly/3eWmqQz" target="_blank">Get Started Now</a>
+            </div>
+            <div class="workbtns"><a href="./about.html">More About Us</a></div>
+          </div>
+        </div>
+      </section>
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+  
+        <div class="faq-item">
+          <h3>What types of gift cards can I trade on Cnaira Exchange?</h3>
+          <p>
+            We support a wide range of gift cards including Amazon, iTunes, Google
+            Play, and more. Check our platform for the full list of supported gift
+            cards.
+          </p>
+        </div>
+  
+        <div class="faq-item">
+          <h3>Which cryptocurrencies can I trade on Cnaira Exchange?</h3>
+          <p>
+            Our platform supports popular cryptocurrencies such as Bitcoin (BTC),
+            Ethereum (ETH), Litecoin (LTC), Ripple (XRP), and more.
+          </p>
+        </div>
+  
+        <div class="faq-item">
+          <h3>How can I contact customer support?</h3>
+          <p>
+            You can reach our customer support team 24/7 through our live chat
+            feature on the website, by email, or through our contact form.
+          </p>
+        </div>
+  
+        <div class="faq-item">
+          <h3>Do you offer any educational resources for new traders?</h3>
+          <p>
+            Yes, we offer a comprehensive library of tutorials, articles, and
+            webinars to help you make informed trading decisions and stay updated
+            with market trends.
+          </p>
+        </div>
+      </section>
+      <section class="footerH">
+        <div class="footHead">
+          <h1>Request a Service/Ask a Question</h1>
+        </div>
+        <div class="footerform">
+          <div class="contact-form">
+            <h4>Request a Service/Ask a Question</h4>
+            <form id="serviceForm">
+              <div class="form-group">
+                <label for="from_name">Your Name</label>
+                <input type="text" id="from_name" name="from_name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Service Required/Ask a Question</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Request</button>
+            </form>
+          </div>
+          <div class="FormImg">
+            <img src="./woman.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <div>
+        <!-- HTML code to include the WhatsApp icon with the substituted link -->
+        <a href="https://bit.ly/3eWmqQz" class="fixed-whatsapp" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      <footer class="footerCont">
+        <section class="footL">
+          <div class="footerLogo">
+            <img src="./Xlogo.png.jpg" alt="" />
+          </div>
+          <div class="About">
+            <h4>About</h4>
+          </div>
+          <div class="All">
+            <div class="about">
+              <h4>Contact</h4>
+              <span>anthonyclement98@gmail.com</span><br /><br /><br />
+              <span>+234 810 655 7377</span>
+            </div>
+          </div>
+  
+          <div class="community">
+            <h3>community</h3>
+            <br />
+            <div class="social-icons">
+              <a href="https://bit.ly/3eWmqQz" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/cnaira_xchange?igsh=bm12eDQ3cndzd3Z6&utm_source=qr"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+        <div class="COPY">
+          COPYRIGHT © 2019. All Rights Reserved By Cnaria Exchange
+        </div>
+      </footer>
